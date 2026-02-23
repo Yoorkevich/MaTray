@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging.Abstractions;
 using NSubstitute;
 using TrayManager.Features.KillProcess;
 using TrayManager.Features.ListProcesses;
@@ -15,7 +16,8 @@ public class OverlayViewModelTests
     {
         _sut = new OverlayViewModel(
             new ListProcessesHandler(_provider),
-            new KillProcessHandler(_killer));
+            new KillProcessHandler(_killer),
+            NullLogger<OverlayViewModel>.Instance);
     }
 
     [Fact]

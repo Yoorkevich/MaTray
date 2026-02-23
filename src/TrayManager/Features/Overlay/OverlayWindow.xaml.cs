@@ -16,7 +16,7 @@ public partial class OverlayWindow : Window
     private void OnContentRendered(object? sender, EventArgs e)
     {
         var workArea = SystemParameters.WorkArea;
-        Left = workArea.Right - ActualWidth;
-        Top = workArea.Bottom - ActualHeight;
+        Left = workArea.Left + (workArea.Width - ActualWidth) / 2;
+        Top = workArea.Top + (workArea.Height - ActualHeight) / 2;
     }
 }
