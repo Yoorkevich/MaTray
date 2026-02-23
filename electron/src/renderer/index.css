@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #1e1e2e;
+  --color-mantle: #181825;
+  --color-surface0: #313244;
+  --color-surface1: #45475a;
+  --color-text: #cdd6f4;
+  --color-subtext: #a6adc8;
+  --color-overlay: #6c7086;
+  --color-red: #ff453a;
+  --color-border: #333346;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow: hidden;
+}
